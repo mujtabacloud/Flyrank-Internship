@@ -29,8 +29,8 @@ The API exposes two JSON endpoints:
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone <https://github.com/mujtaba666/Flyrank-Internship.git>
+cd <week1-API Assignment>
 ```
 
 2. Create and activate a virtual environment.
