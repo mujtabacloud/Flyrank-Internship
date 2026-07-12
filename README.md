@@ -20,9 +20,9 @@ During this internship, I aim to:
 
 ```text
 .
-├── Week-01/
-├── Week-02/
-├── Week-03/
+├── Week1-topic.../
+├── Week2-topic.../
+├── Week3-topic.../
 ├── ...
 └── README.md
 ```
