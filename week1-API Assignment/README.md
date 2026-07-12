@@ -71,6 +71,8 @@ Returns:
   "message": "Hello FlyRank! This is Mujtaba(flyrank internee) and this is my first API assignment."
 }
 ```
+<img width="1363" height="703" alt="Screenshot 2026-07-12 111544" src="https://github.com/user-attachments/assets/9a3ddf33-5e91-4b66-9c2c-88a18633d86c" />
+
 
 ### GET /health
 
@@ -81,6 +83,8 @@ Returns:
   "status": "ok"
 }
 ```
+<img width="1365" height="725" alt="Screenshot 2026-07-12 111625" src="https://github.com/user-attachments/assets/abbd8e1e-372c-4695-af53-7bd7c194c078" />
+
 
 ## Testing
 
