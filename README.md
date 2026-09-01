@@ -1,67 +1,75 @@
-# FlyRank Backend AI Engineering Internship
+FlyRank Backend AI Engineering - Week 2 Assignment
+Overview
 
-Welcome to my repository for the **FlyRank Backend AI Engineering Internship**.
+This project is a simple CRUD API built with FastAPI and SQLite.
 
-This repository documents my learning journey, assignments, and projects completed throughout the internship. It serves as a record of my progress as I build practical skills in backend development, AI engineering, and modern software development practices.
+The API allows users to create, read, update, and delete tasks.
 
-## Objectives
+Technologies Used
+Python 3.12
+FastAPI
+Uvicorn
+SQLite
+Database
 
-During this internship, I aim to:
+The project uses SQLite because it is lightweight and does not require a separate database server.
 
-* Learn backend development with Python.
-* Build RESTful APIs using FastAPI.
-* Understand client-server architecture and HTTP.
-* Work with databases and data persistence.
-* Integrate AI and machine learning models into backend services.
-* Follow Git and GitHub best practices for version control and collaboration.
-* Develop production-ready backend applications.
+The database file is:
 
-## Repository Structure
+tasks.db
 
-```text
-.
-├── Week1-topic.../
-├── Week2-topic.../
-├── Week3-topic.../
-├── ...
-└── README.md
-```
+The tasks table contains:
 
-Each week's folder contains:
+id - unique task ID
+title - task title
+done - task completion status
 
-* Assignment source code
-* Project documentation
-* Setup instructions
-* Notes and learning outcomes
+The database and table are automatically created when the application starts.
 
-## Tech Stack
+Three example tasks are added only when the database is empty.
 
-* Python
-* FastAPI
-* Uvicorn
-* Git & GitHub
+How to Run
 
-Additional technologies will be added as the internship progresses.
+Install the dependencies:
 
-## Progress
+py -3.12 -m pip install fastapi uvicorn
 
-| Week | Assignment                    | Status      |
-| ---- | ----------------------------- | ----------- |
-| 1    | Build Your First API Endpoint | ✅ Completed |
-| 2    | Coming Soon                   | ⏳           |
-| 3    | Coming Soon                   | ⏳           |
 
-## Learning Goals
+Start the server:
 
-Through this internship, I hope to strengthen my understanding of:
+py -3.12 -m uvicorn main:app --reload
 
-* Backend system design
-* API development
-* AI-powered backend services
-* Clean code and software engineering practices
-* Debugging and testing
-* Deployment and cloud fundamentals
 
-## About
+The API runs at:
 
-This repository is maintained as part of the **FlyRank Backend AI Engineering Internship** and will be updated regularly as I complete new assignments and projects.
+http://127.0.0.1:8000
+
+Swagger documentation:
+
+http://127.0.0.1:8000/docs
+
+API Endpoints
+GET /tasks - Get all tasks
+GET /tasks/{id} - Get one task
+POST /tasks - Create a task
+PUT /tasks/{id} - Update a task
+DELETE /tasks/{id} - Delete a task
+Example SQL Query
+SELECT * FROM tasks WHERE done = 1;
+
+
+This query shows all completed tasks.
+
+Database Screenshot
+
+The SQLite database was opened using DB Browser for SQLite and the tasks table was checked.
+
+Add the database screenshot here.
+
+Persistence
+
+Tasks are stored in SQLite instead of an in-memory list. Therefore, tasks remain available after restarting the server.
+
+Author
+
+Created as part of the FlyRank Backend AI Engineering Internship.
