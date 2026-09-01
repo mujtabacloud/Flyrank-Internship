@@ -1,6 +1,5 @@
 FlyRank Backend AI Engineering - Week 2 Assignment
 Overview
-
 This project is a simple CRUD API built with FastAPI and SQLite.
 
 The API allows users to create, read, update, and delete tasks. Tasks are stored in a SQLite database so the data remains available after restarting the server.
@@ -11,13 +10,11 @@ FastAPI
 Uvicorn
 SQLite
 Database
-
 SQLite is used because it is lightweight and does not require a separate database server.
 
 The database file is:
 
 tasks.db
-
 
 The database contains a table called tasks with these columns:
 
@@ -38,22 +35,18 @@ Project Structure
 └── README.md
 
 Installation
-
 Install the required packages:
 
 py -3.12 -m pip install fastapi uvicorn
 
 Run the Server
-
 Start the server with:
 
 py -3.12 -m uvicorn main:app --reload
 
-
 The server will run at:
 
 http://127.0.0.1:8000
-
 
 FastAPI documentation:
 
@@ -63,12 +56,10 @@ API Endpoints
 Get all tasks
 GET /tasks
 
-
 Returns all tasks from the SQLite database.
 
 Get one task
 GET /tasks/{id}
-
 
 Returns a specific task.
 
@@ -81,7 +72,6 @@ If the task does not exist, the API returns:
 Create a task
 POST /tasks
 
-
 Example request:
 
 {
@@ -90,7 +80,6 @@ Example request:
 
 Update a task
 PUT /tasks/{id}
-
 
 Example request:
 
@@ -102,15 +91,12 @@ Example request:
 Delete a task
 DELETE /tasks/{id}
 
-
 Deletes the selected task.
 
 Example SQL Query
-
 The following SQL query shows all completed tasks:
 
 SELECT * FROM tasks WHERE done = 1;
-
 
 Other example queries:
 
@@ -123,18 +109,15 @@ UPDATE tasks SET done = 1;
 DELETE FROM tasks WHERE done = 1;
 
 Persistence
-
 Unlike the previous in-memory version, this project stores tasks in SQLite.
 
 Therefore, tasks remain available even after the server is stopped and restarted.
 
 Database Screenshot
-
 The tasks.db database was opened using a SQLite database viewer.
 
 The screenshot below shows the tasks table and stored tasks.
 
 <!-- Add your database screenshot here -->
 Author
-
 Created as part of the FlyRank Backend AI Engineering Internship – Week 2 Assignment.
