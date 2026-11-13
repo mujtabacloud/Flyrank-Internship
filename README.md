@@ -1,4 +1,4 @@
-FlyRank Backend AI Engineering - Week 2 Assignment
+FlyRank Backend AI Engineering - Assignments
 Overview
 
 This project is a simple CRUD API built with FastAPI and SQLite.
@@ -42,18 +42,14 @@ Installation
 Install the required packages:
 
 py -3.12 -m pip install fastapi uvicorn
-
 Run the Server
 
 Start the server with:
-
 py -3.12 -m uvicorn main:app --reload
 
 
 The server will run at:
-
 http://127.0.0.1:8000
-
 
 FastAPI documentation:
 
@@ -123,15 +119,10 @@ UPDATE tasks SET done = 1;
 DELETE FROM tasks WHERE done = 1;
 
 Persistence
-
 Unlike the previous in-memory version, this project stores tasks in SQLite.
-
 Therefore, tasks remain available even after the server is stopped and restarted.
-
 Database Screenshot
-
 The tasks.db database was opened using a SQLite database viewer.
-
 The screenshot below shows the tasks table and stored tasks.
 
 <!-- Add your database screenshot here -->
